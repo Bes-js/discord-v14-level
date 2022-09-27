@@ -1,4 +1,6 @@
 # Discord v14 Level / XP Botu
+- 2 3 güne paylaşılacak
+
 
 - v14 Level / XP Botu ( Fake Starlardan Dolayı 10 Star'da Paylaşılacak )
 
