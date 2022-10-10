@@ -1,5 +1,5 @@
 # Discord v14 Level / XP Botu
-- 2 3 güne paylaşılacak
+- yoğunluğumdan kaynaklı altyapıyı 1-2 hafta içinde paylaşıcam
 
 
 - v14 Level / XP Botu ( Fake Starlardan Dolayı 10 Star'da Paylaşılacak )
