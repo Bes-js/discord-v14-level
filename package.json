@@ -1,0 +1,54 @@
+{
+  "name": "v14-level-bot",
+  "version": "0.0.1",
+  "description": "Beş v14 Level / XP Botu",
+  "main": "beş.js",
+  "scripts": {
+    "start": "node beş.js"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "author": "Beş",
+  "license": "MIT",
+  "dependencies": {
+    "@alfr3xd/discordcards": "^1.3.1",
+    "@discord-card/levelcard": "^3.7.9",
+    "@discordjs/builders": "^1.2.0",
+    "@discordjs/rest": "^1.1.0",
+    "@discordjs/voice": "^0.11.0",
+    "axios": "^0.27.2",
+    "bitfield": "^4.1.0",
+    "canvafy": "^2.0.2",
+    "canvas": "^2.10.1",
+    "discord-api-types": "^0.37.8",
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.1",
+    "fs": "^0.0.2",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^6.6.1",
+    "ms": "^2.1.3",
+    "parse-ms": "^3.0.0"
+  },
+  "keywords": [
+    "Beş#0005",
+    "Beş",
+    "Bes",
+    "5",
+    "v14",
+    "v14 level",
+    "v14 lvl",
+    "v14-level",
+    "discord-v14",
+    "v14 bot",
+    "discord v14",
+    "discord level botu",
+    "discord level bot",
+    "discord sıralama bot",
+    "discord",
+    "v14 xp",
+    "xp",
+    "level"
+  ]
+}
