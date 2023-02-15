@@ -24,7 +24,7 @@ const xpRandom = (length) => {
       await levels.updateOne({ guildID: message.guild.id, userID: message.author.id }, {$set: { gerekli: gerekli + 200 }}, { upsert: true });
       await levels.updateOne({ guildID: message.guild.id, userID: message.author.id }, {$inc: { level: 1 }}, { upsert: true });
       if (beş_config.levelChannel) {
-      client.guilds.cache.get(message.guild.id).channels.cache.get(beş_config.levelChannel).send({content:`> **${message.author} Tebrikler! \`${level + 1}.\` Levele Ulaştınn!**`,files:[att]});
+      client.guilds.cache.get(message.guild.id).channels.cache.get(beş_config.levelChannel).send({content:`> **${message.author} Tebrikler! \`${level + 1}.\` Levele Ulaştınn!**`});
 message.channel.send({content:`> **${message.author} Tebrikler! \`${level + 1}.\` Levele Ulaştınn!**`});
       } else {
       message.channel.send({content:`> **${message.author} Tebrikler! \`${level + 1}.\` Levele Ulaştınn!**`});
