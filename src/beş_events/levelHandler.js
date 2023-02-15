@@ -24,14 +24,10 @@ const xpRandom = (length) => {
       await levels.updateOne({ guildID: message.guild.id, userID: message.author.id }, {$set: { gerekli: gerekli + 200 }}, { upsert: true });
       await levels.updateOne({ guildID: message.guild.id, userID: message.author.id }, {$inc: { level: 1 }}, { upsert: true });
       if (beş_config.levelChannel) {
-      const image = await levelupCard(message.member, {level: level + 1});
-    const att = new AttachmentBuilder(image, 'level_up_bes.png')
       client.guilds.cache.get(message.guild.id).channels.cache.get(beş_config.levelChannel).send({content:`> **${message.author} Tebrikler! \`${level + 1}.\` Levele Ulaştınn!**`,files:[att]});
-message.channel.send({content:`> **${message.author} Tebrikler! \`${level + 1}.\` Levele Ulaştınn!**`,files:[att]});
+message.channel.send({content:`> **${message.author} Tebrikler! \`${level + 1}.\` Levele Ulaştınn!**`});
       } else {
-     const image = await levelupCard(message.member, {level: level + 1});
-    const att = new AttachmentBuilder(image, 'level_up_bes.png')
-      message.channel.send({content:`> **${message.author} Tebrikler! \`${level + 1}.\` Levele Ulaştınn!**`,files:[att]});
+      message.channel.send({content:`> **${message.author} Tebrikler! \`${level + 1}.\` Levele Ulaştınn!**`});
       };
     }
 
