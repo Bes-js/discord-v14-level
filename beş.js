@@ -1,10 +1,8 @@
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, Modal, TextInputBuilder, OAuth2Scopes, Partials, resolveColor, Client, Collection, GatewayIntentBits,SelectMenuBuilder,ActivityType } = require("discord.js");
-const client = global.client = new Client({fetchAllMembers: true,intents:[GatewayIntentBits.Guilds,GatewayIntentBits.GuildMembers,GatewayIntentBits.GuildBans,GatewayIntentBits.GuildEmojisAndStickers,GatewayIntentBits.GuildIntegrations,GatewayIntentBits.GuildWebhooks,GatewayIntentBits.GuildInvites,GatewayIntentBits.GuildVoiceStates,GatewayIntentBits.GuildPresences,GatewayIntentBits.GuildMessages,GatewayIntentBits.GuildMessageReactions,GatewayIntentBits.GuildMessageTyping,GatewayIntentBits.MessageContent],scopes:[OAuth2Scopes.Bot, OAuth2Scopes.ApplicationsCommands],partials: [Partials.Message, Partials.Channel, Partials.Reaction, Partials.User,Partials.GuildMember, Partials.ThreadMember, Partials.GuildScheduledEvent],ws: {version: "10"}});
+const client = global.client = new Client({fetchAllMembers: true,intents:Object.keys(GatewayIntentBits),partials:Object.keys(Partials),ws: {version: "10"}});
 const beş_config = require("./beş_config.json")
 const { readdir } = require("fs");
 const mongoose = require("mongoose");
-const { REST } = require('@discordjs/rest');
-const { Routes } = require("discord-api-types/v10");
 const commands = client.commands = new Collection();
 const aliases = client.aliases = new Collection();
 readdir("./src/beş_commands/", (err, files) => {if (err) console.error(err)
