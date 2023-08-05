@@ -22,7 +22,7 @@ const xpRandom = (length) => {
     const levelUp = await new canvafy.LevelUp()
     .setAvatar(message.author.displayAvatarURL({extension:"png",size:2048}))
     .setBackground("image", "https://cdn.discordapp.com/attachments/1041745966186909826/1096055377289814126/e4a8a79fccae98487a74d8bd1f2357834dfa7295.png")
-    .setUsername("Beş")
+    .setUsername(message.author.username)
     .setBorder("#000000")
     .setAvatarBorder("#ff0000")
     .setOverlayOpacity(0.7)
